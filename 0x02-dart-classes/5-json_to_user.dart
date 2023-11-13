@@ -22,6 +22,6 @@ static User fromJson(Map<dynamic, dynamic> userJson){
 
 @override
     String toString(){
-        return 'User(id : ${this.id} ,name: ${this.name},  age: ${this.age}, height: ${this.height})';
+        return 'User(id : ${this.id} ,name: ${this.name}, age: ${this.age}, height: ${this.height})';
     }
 }
