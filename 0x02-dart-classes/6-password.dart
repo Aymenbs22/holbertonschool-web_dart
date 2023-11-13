@@ -1,13 +1,13 @@
 class Password {
-    String _password;
+    String _password = '';
     Password({required String password}) : _password = password;
     String get password => _password;
 
     set password(String password){
         _password = password;
     }
-    
-    bool isValid(user_password){
+
+    bool isValid(){
         if (this.password.length >= 8 && this.password.length <= 16) {
             if (this.password.contains(RegExp(r'[A-Z]'))){
                 if (this.password.contains(RegExp(r'[a-z]'))){
