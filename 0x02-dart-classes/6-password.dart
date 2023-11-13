@@ -7,7 +7,7 @@ class Password {
         _password = password;
     }
 
-    bool isValid(){
+    bool isValid(user_password){
         if (this.password.length >= 8 && this.password.length <= 16) {
             if (this.password.contains(RegExp(r'[A-Z]'))){
                 if (this.password.contains(RegExp(r'[a-z]'))){
